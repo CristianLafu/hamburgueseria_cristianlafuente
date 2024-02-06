@@ -84,7 +84,6 @@ video {
     border: 0;
     font-size: 100%;
     font: inherit;
-    font-family: 'Montserrat';
     vertical-align: baseline;
 }
 
@@ -130,11 +129,6 @@ table {
     border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;700&display=swap');
-
-/*
-        font-family: 'Handlee',
-        cursive;
-        font-family: 'Montserrat',
-        sans-serif;
-*/
+* {
+    box-sizing: border-box;
+}
