@@ -30,6 +30,7 @@ img {
 .container {
     max-width: var(--anchomaximo);
     margin: 0 auto;
+    padding: 0 0.625em;
 }
 
 body {
