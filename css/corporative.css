@@ -37,3 +37,7 @@ body {
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
 }
+
+.activo {
+    color: var(--colorprincipal) !important;
+}
