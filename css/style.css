@@ -166,7 +166,9 @@ footer a {
 /* inicio our services */
 
 main section {
+    margin: 0 auto;
     padding: 2.125rem 0.625rem;
+    width: 68.75rem;
 }
 
 main .grid {
@@ -283,9 +285,230 @@ section#aboutus figure:hover :is(.imagen, .marco) {
 
 
 /* final about us */
+
+/* inicio blog */
+
+.blogtitle {
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.blogtitle h2 {
+    font-family: var(--fuentetitulos);
+    font-size: 2rem;
+    text-align: center;
+
+    & span {
+        color: var(--colorprincipal);
+    }
+}
+
+.blogtitle .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: bold;
+    text-align: center;
+
+    & hr {
+        border-color: var(--colorprincipal);
+        position: absolute;
+        width: 100%;
+        top: -2px;
+    }
+}
+
+main {
+    width: 68.75rem;
+    margin: 0 auto;
+}
+
+main .blogarticles {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-bottom: 6.25rem;
+}
+
+main section .date {
+    position: absolute;
+    height: 5.3125rem;
+    width: 5.3125rem;
+    background-color: var(--colorprincipal);
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main section .date {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 1.25rem;
+
+}
+
+
+main .blogarticles article {
+
+    & h3 {
+        margin: var(--margingrid) 0;
+        font-weight: 700;
+        font-size: 115%;
+    }
+
+    & p {
+        color: #666;
+        font-size: 95%;
+        line-height: 1.2;
+        margin-bottom: var(--margingrid);
+    }
+
+    & a {
+        color: var(--colorprincipal);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    & .blogsubtitle {
+        color: var(--colorprincipal);
+        font-weight: 700;
+    }
+}
+
+/* FIN BLOG */
+/* INOCIO MENU*/
+.backgroundMenu {
+    background-color: rgba(5, 5, 5, 0.925);
+    padding-bottom: 12.5rem;
+}
+
+
+.menunav {
+    width: 70%;
+}
+
+
+.menuNav .container {
+    display: flex;
+    justify-content: space-around;
+
+    & i {
+        color: var(--colorprincipal);
+        font-size: 140%;
+
+    }
+}
+
+.menuNav .container .navegacion {
+    width: 100%;
+}
+
+.menuNav .container .navegacion a {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1.25rem;
+    text-align: left;
+    color: white;
+}
+
+.menuMain {
+    display: flex;
+}
+
+.menuMain article h3 {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+}
+
+.menuMain article hr {
+    color: var(--colorprincipal);
+    width: 90px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.menuMain article p {
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.menuColums {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.seccion1 {
+    width: 40%;
+}
+
+.h3menutitle {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+}
+
+.pmenu {
+    color: rgba(255, 255, 255, 0.616);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.enlace {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    margin-top: 2rem;
+}
+
+.red {
+    color: var(--colorprincipal);
+    font-weight: bold;
+}
+
+.articleMenuGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+
+
+    & figure {
+        width: 20%;
+    }
+
+}
+
+.makeHold:hover {
+    background-color: var(--colorprincipal);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* inicio mequeries */
 
 @media(min-width: 37.5rem) {
+
     main .grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -357,4 +580,65 @@ section#aboutus figure:hover :is(.imagen, .marco) {
     }
 }
 
-/* fin mequeries */
+
+@media(max-width: 37.5rem) {
+
+    main {
+        max-width: 30.5rem;
+    }
+
+    .menutitle {
+        max-width: 30rem;
+        /*misterio de la ciencia, preguntar a Juan.*/
+    }
+
+    .menuColums {
+        flex-direction: column;
+
+    }
+
+    .seccion1 {
+        width: 100%;
+        gap: 3.125rem;
+    }
+
+    .menuNav {
+        margin-bottom: 3.125rem;
+    }
+
+    .articleMenuGrid {
+        flex-direction: column;
+        margin-left: 1.5625rem;
+
+        & figure {
+            width: 40%;
+        }
+    }
+
+    /*menu end baby*/
+
+    .blogtitle {
+        max-width: 30rem;
+    }
+
+    /*Preguntar por el maldito titulo descentrar, cristian del futuro, haz la puta pregunta es !important hacerla*/
+
+    /*Soy el Cristian del muy futuro para dejar constancia que se te ocurrio durmiendo y como buen paisano te levantaste y lo solucionaste, deberías estar orgulloso de tu fuerza de voluntad y preocupado por tu insomnio*/
+
+    .blogarticles {
+        grid-template-columns: 1fr !important;
+        max-width: 30rem;
+    }
+
+    /* principal page*/
+
+    section#aboutus {
+        max-width: 30rem;
+    }
+
+    section#services {
+        max-width: 30rem;
+    }
+
+
+}
